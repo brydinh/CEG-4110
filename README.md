@@ -52,12 +52,15 @@ Now you can save your awesome drawings!!
  
 <b>Drawing Pad-</b>
         The Drawing Pad actvity implements a custom view called PaintView that was created solely for the drawing functionality. There are several methods that contribute to PaintView's functionality: 
-        setColor(), 
-        -reset(), 
-         -onDraw(), and 
-          -onTouchEvent(). setColor() will set the paint to a new color if the user wants to change the color, reset() will clear out the canvas, and onDraw() and onTouchEvent() are involved when the user is interacting with the screen. onDraw() and onTouchEvent() will keep track whether or not the user has started drawing, is in motion, or stopped and handles accordingly. As the user draws paths, onTouchEvent() keeps tracks of the starting and ending points of the path and adds it to the bitmap.
+        
+   * setColor()- Set the paint to a new color if the user wants to change color
+   * reset()- Will clear out the canvas
+   * onDraw()- Involved with touch
+   * onTouchEvent()- Involved with touch
 
-In my DrawingPad activity, I have the 3 buttons (save, change color, and clear) call the functions specified in the custom view accordingly. I also call the external Color Picker library in this activity.
+onDraw() and onTouchEvent() will keep track whether or not the user has started drawing, is in motion, or stopped and handles accordingly. As the user draws paths, onTouchEvent() keeps tracks of the starting and ending points of the path and adds it to the bitmap. onDraw() handles the rest and actually draws the picture.
+
+In my DrawingPad activity, I have the clear button call reset() in the custom view accordingly. I also implement the external Color Picker library where if it executes it will call setColor(). For save, I handled the logic in that handler seperately.
 
  # Resources I Used:
  
