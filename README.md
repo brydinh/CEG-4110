@@ -64,7 +64,7 @@ In my DrawingPad activity, I have the clear button call reset() in the custom vi
 
  # Resources I Used:
  
- These are the sources I used to help implement the application.
+ These are the sources I used to help implement the application (I give credit to them okay):
  
   <b> What I used to implement the drawing pad:</b>
             https://code.tutsplus.com/tutorials/android-sdk-create-a-drawing-app-touch-interaction--mobile-19202
