@@ -11,7 +11,7 @@ Before this homework assignment I had very little experience working with Androi
 
 
 
-App Information:
+#App Information:
 
     APP SETUP:
     
@@ -52,7 +52,7 @@ Software Design Discussion:
 
 
 
-Resources I Used:
+#Resources I Used:
 
         What I used to implement the drawing pad:
             https://code.tutsplus.com/tutorials/android-sdk-create-a-drawing-app-touch-interaction--mobile-19202
