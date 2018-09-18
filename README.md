@@ -9,13 +9,11 @@ the drawing pad allows the user to draw images onto the screen with different co
 
 Before this homework assignment I had very little experience working with Android Studio, so it was very time consuming trying to get used to the Android Studio IDE and the gimmicks behind it. I also did not know how to import libraries so that was also a huge learning curve. I used many resources to help complete this project (credited in Resources I Used).
 
-
-
 # App Information:
 
 <b>App SETUP:</b>
 
--Copy the apk from the bin folder (provided by PILOT deliverable) onto usb and you should be good
+-Copy the apk from the bin folder (provided by PILOT deliverable) onto USB and you should be good
 
 If you want to save your drawings you MUST first grant app permissions for storage.
 
@@ -27,10 +25,7 @@ If you want to save your drawings you MUST first grant app permissions for stora
   ![](screenshots/Screenshot_1537279324.png)
   ![](screenshots/Screenshot_1537279329.png)
   
-  
- 
 Now you can save your awesome drawings!!
-
 
 <b>Activity 1- Random Color Selector:</b>
 
@@ -40,36 +35,40 @@ Now you can save your awesome drawings!!
  ![](screenshots/Screenshot_1537274007.png)
  ![](screenshots/Screenshot_1537274016.png)
  ![](screenshots/Screenshot_1537274048.png)
-
-        
+      
 <b>ACTIVITY 2- Drawing Pad:</b>
  
- This is the second activity where the user can draw images onto the screen. Besides drawing, the user can also change brush color, save pictures (as long as they followed APP SETUP instructions), and clear their drawings. If the user did not follow APP SETUP instructions, they will not be able to save their picture (An error message will pop up indicating that they need external permissions). The user can also draw many paths with different colors.
+ This is the second activity where the user can draw images onto the screen. Besides drawing, the user can also change brush color, save pictures (as long as they followed APP SETUP instructions), and clear their drawings. If the user did not follow the APP SETUP instructions, they will not be able to save their picture (An error message will pop up indicating that they need external permissions). The user can also draw many paths with different colors.
            
 ![](screenshots/Screenshot_1537273935.png)
 ![](screenshots/Screenshot_1537274144.png)
 ![](screenshots/Screenshot_1537286974.png)
 ![](screenshots/Screenshot_1537287012.png)
 
-
 # Software Design Discussion:
 
  <b>Random Color Selector-</b>
-        I implemented the random color generator by declaring a random and generated random int values for 3 ints (These are for the RGB values). I then used the 3 RGB values to declare the new color. Finally I set the text color to the new color and got its hex representation by calling Integer.toHexString(color). To display the RGB and hex values, I set those variables to a label.
+        I implemented the random color generator by declaring a random and generated random int values for 3 ints (These are for the RGB values). I then used the 3 RGB values to declare the new color. Finally I set the text color to the new color and got its hex representation by calling Integer.toHexString(color). To display the RGB and hex values, I set those variables to be dislpayed on a label.
  
 <b>Drawing Pad-</b>
-        In order to implement the Drawing Pad, I used a tutorial to show me how to create the drawing mechanism. Before this assignment, I had no prior experience at implementing a paint app so I had to use external resources for help. 
+        The Drawing Pad actvity implements a custom view called PaintView that was created solely for the drawing functionality. There are several methods that contribute to PaintView's functionality: setColor(), reset(), onDraw(), and onTouchEvent(). setColor() will set the paint to a new color if the user wants to change the color, reset() will clear out the canvas, and onDraw() and onTouchEvent() are involved when the user is interacting with the screen. onDraw() and onTouchEvent() will keep track whether or not the user has started drawing, is in motion, or stopped and handles accordingly. As the user draws paths, onTouchEvent() keeps tracks of the starting and ending points of the path and adds it to the bitmap.
+
+In my DrawingPad activity, I have the 3 buttons (save, change color, and clear) call the functions specified in the custom view accordingly. I also call the external Color Picker library in this activity.
 
  # Resources I Used:
+ 
+ These are the sources I used to help implement the application.
  
   <b> What I used to implement the drawing pad:</b>
             https://code.tutsplus.com/tutorials/android-sdk-create-a-drawing-app-touch-interaction--mobile-19202
 
   <b>AmbilWarna Color Picker Library: </b>  
             https://github.com/yukuku/ambilwarna
-                  
-  <b>TO USE AMBILWARNA LIBRARY:</b>
-            In build.gradle(Module: app)
+  
+  
+  # Dependencies:
+  <b>TO USE AMBILWARNA COLOR PICKER LIBRARY:</b>
+            Include this line in build.gradle or build.gradle(Module: app)--
             
                 dependencies {
                 implementation 'com.github.yukuku:ambilwarna:2.0.1'
