@@ -55,8 +55,8 @@ Now you can save your awesome drawings!!
         
    * setColor()- Set the paint to a new color if the user wants to change color
    * reset()- Will clear out the canvas
-   * onDraw()- Involved with touch
-   * onTouchEvent()- Involved with touch
+   * onDraw()- Involved with touch event
+   * onTouchEvent()- Involved with touch event
 
 onDraw() and onTouchEvent() will keep track whether or not the user has started drawing, is in motion, or stopped and handles accordingly. As the user draws paths, onTouchEvent() keeps tracks of the starting and ending points of the path and adds it to the bitmap. onDraw() handles the rest and actually draws the picture.
 
