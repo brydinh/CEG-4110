@@ -51,7 +51,11 @@ Now you can save your awesome drawings!!
         I implemented the random color generator by declaring a random and generated random int values for 3 ints (These are for the RGB values). I then used the 3 RGB values to declare the new color. Finally I set the text color to the new color and got its hex representation by calling Integer.toHexString(color). To display the RGB and hex values, I set those variables to be dislpayed on a label.
  
 <b>Drawing Pad-</b>
-        The Drawing Pad actvity implements a custom view called PaintView that was created solely for the drawing functionality. There are several methods that contribute to PaintView's functionality: setColor(), reset(), onDraw(), and onTouchEvent(). setColor() will set the paint to a new color if the user wants to change the color, reset() will clear out the canvas, and onDraw() and onTouchEvent() are involved when the user is interacting with the screen. onDraw() and onTouchEvent() will keep track whether or not the user has started drawing, is in motion, or stopped and handles accordingly. As the user draws paths, onTouchEvent() keeps tracks of the starting and ending points of the path and adds it to the bitmap.
+        The Drawing Pad actvity implements a custom view called PaintView that was created solely for the drawing functionality. There are several methods that contribute to PaintView's functionality: 
+        setColor(), 
+        -reset(), 
+         -onDraw(), and 
+          -onTouchEvent(). setColor() will set the paint to a new color if the user wants to change the color, reset() will clear out the canvas, and onDraw() and onTouchEvent() are involved when the user is interacting with the screen. onDraw() and onTouchEvent() will keep track whether or not the user has started drawing, is in motion, or stopped and handles accordingly. As the user draws paths, onTouchEvent() keeps tracks of the starting and ending points of the path and adds it to the bitmap.
 
 In my DrawingPad activity, I have the 3 buttons (save, change color, and clear) call the functions specified in the custom view accordingly. I also call the external Color Picker library in this activity.
 
