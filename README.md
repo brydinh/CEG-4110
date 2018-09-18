@@ -1,6 +1,6 @@
 # CEG4110_HW1
 
-CEG-4110 HW 1: Random Color Selector & Drawing Pad
+<b>CEG-4110 HW 1: Random Color Selector & Drawing Pad</b>
 
 This android application was made for the first homework assignment of CEG-4110: Intro to Software Engineering at Wright State University. It is a relatively simple app consisting of two activities: a random color selector and a drawing pad. 
 
