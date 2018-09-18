@@ -13,7 +13,7 @@ Before this homework assignment I had very little experience working with Androi
 
 <b>App SETUP:</b>
 
--Copy the apk from the bin folder (provided by PILOT deliverable) onto USB and you should be good
+-Copy the APK from the bin folder (provided by PILOT deliverable) onto USB and you should be good
 
 If you want to save your drawings you MUST first grant app permissions for storage.
 
