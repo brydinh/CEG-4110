@@ -28,6 +28,7 @@ If you want to save your drawings you MUST first grant app permissions for stora
   ![](screenshots/Screenshot_1537279329.png)
   
   
+ 
 Now you can save your awesome drawings!!
 
 
