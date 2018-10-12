@@ -14,7 +14,7 @@ Since I am still very inexperienced in Android Studio, programming and adding vi
 
 2) User can change time and date accordingly on the open views. Once these changes occur, every present clock on the screen will update to the new times and the views will continue to update every second.
 
-3) User can redo and undo actions. This means any time changes or date changes will be undone. The number of times a change can be undone or redone willl be unbounded
+3) User can redo and undo actions. This means any time changes or date changes will be undone. The number of times a change can be undone or redone willl be unbounded.
 
 ![](screenshots/Screenshot_1539302165.png)
 ![](screenshots/Screenshot_1539302202.png)
