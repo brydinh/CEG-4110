@@ -41,7 +41,7 @@ https://www.tutorialspoint.com/design_pattern/command_pattern.htm
 <b>Vector Analog Clock: </b>
 https://github.com/TurkiTAK/vector-analog-clock
 
-<b> TimePickerWithSeconds </b>
+<b> TimePickerWithSeconds: </b>
 https://github.com/IvanKovac/TimePickerWithSeconds
 
 
